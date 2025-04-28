@@ -136,7 +136,7 @@ export const CardItem = ({
   ]);
 
   return (
-    <Tag
+    <div
       // TypeScript sometimes complains on ref for intrinsic elements,
       // so we force a cast here to bypass that error.
       ref={ref as any}
@@ -144,7 +144,7 @@ export const CardItem = ({
       {...rest}
     >
       {children}
-    </Tag>
+    </div>
   );
 };
 
