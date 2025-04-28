@@ -123,7 +123,7 @@ export const navItems = [
       title: "PerOculus | AI-Powered UAV",
       des: "Developed by Permutes, PerOculus integrates autonomous flight, AI-driven object detection, and real-time mission planning to improve disaster management efficiency. Whether it's floods, stampedes, or agricultural monitoring, PerOculus can rapidly survey, analyze, and generate damage reports using its AI-powered layers:",
       heading: "Drone for Disaster Response",
-      adm_des: "recorded a beautiful diary for us to remeber the day we participated at Plinth, the annual techno-management festival of LNM Institute of Technology, Jaipur! The team participated in various events ranging from Sustainability Hackathons to intense FPV Drone Racing.",
+      adm_des: "",
       link: "https://www.youtube.com/embed/hO80oVH2OzE?si=R3tLEYXLc5HwaZbL",
       user: "Tanishq Som",
       long: 'y',
