@@ -20,7 +20,7 @@ const HeroContent = () => {
                     Research & Development
                 </h2>
 
-                <TextGenerateEffect className="autoBlur text-center text-[40px] md:text-5xl lg:text-6xl lg:max-w-200"
+                <TextGenerateEffect className="autoBlur text-amber-50 text-center text-[40px] md:text-5xl lg:text-6xl lg:max-w-200"
                 words="Permutes: Crafting Innovation Beyond Limits"/>
                 <p className="text-center text-blue-100 md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
                 "Where Innovation, Expertise, and Exploration Converge"

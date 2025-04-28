@@ -121,11 +121,11 @@ export const navItems = [
     {
       id: 2,
       title: "PerOculus | AI-Powered UAV",
-      des: "Developed by Permutes, PerOculus integrates autonomous flight, AI-driven object detection, and real-time mission planning to improve disaster management efficiency. Whether it's floods, stampedes, or agricultural monitoring, PerOculus can rapidly survey, analyze, and generate damage reports using its AI-powered layers:",
+      des: "Developed by Permutes, PerOculus integrates autonomous flight, AI-driven object detection, and real-time mission planning to improve disaster management efficiency. Whether it's floods, stampedes, or agricultural monitoring, PerOculus can rapidly survey, analyze, and generate damage reports using its AI-powered layers",
       heading: "Drone for Disaster Response",
-      adm_des: "",
+      adm_des: "Developed AI-driven drone for object detection, and real-time mission planning to improve disaster management efficiency. Whether it's floods, stampedes, or agricultural monitoring, PerOculus can rapidly survey, analyze, and generate damage reports using its AI-powered layers",
       link: "https://www.youtube.com/embed/hO80oVH2OzE?si=R3tLEYXLc5HwaZbL",
-      user: "Tanishq Som",
+      user: "Permutes",
       long: 'y',
       url: "https://youtu.be/moRqo158NGc?si=ibpGmjTZRIp1-XVA"
     },
