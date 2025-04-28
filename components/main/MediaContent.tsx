@@ -26,19 +26,19 @@ const MediaContent = () => {
               {/* VIDEO SECTION */}
               <div className="w-full md:w-1/2 flex flex-col justify-center">
                 <CardItem
-                  translateZ="25"
+                  translateZ={25}
                   className="text-2xl font-bold text-neutral-100 mb-2"
                 >
                   {item.title}
                 </CardItem>
                 <CardItem
                   as="p"
-                  translateZ="30"
+                  translateZ={30}
                   className="text-neutral-300 text-sm max-w-md mb-4 line-clamp-2"
                 >
                   {item.des}
                 </CardItem>
-                <CardItem translateZ="50" className="w-full">
+                <CardItem translateZ={50} className="w-full">
                   <iframe
                     width="90%"
                     height="250"
@@ -61,13 +61,13 @@ const MediaContent = () => {
 
               {/* INFO SECTION */}
               <div className="w-full md:w-1/2 flex flex-col justify-center pl-0 lg:pl-30 md:pl-10">
-                <CardItem as="h1" translateX="10" translateZ="15" className="text-amber-50 text-3xl font-bold mb-4">
+                <CardItem as="h1" translateX={10} translateZ={15} className="text-amber-50 text-3xl font-bold mb-4">
                   {item.heading}
                 </CardItem>
-                <CardItem as="p" translateX="10" translateZ="15" className="text-amber-50 mb-6 max-w-[500px]">
+                <CardItem as="p" translateX={10} translateZ={15} className="text-amber-50 mb-6 max-w-[500px]">
                   <span className="text-[#79f4de]">{item.user}</span>, {item.adm_des}
                 </CardItem>
-                <CardItem translateX="10" translateZ="15">
+                <CardItem translateX={10} translateZ={15}>
                     <a href={item.link}>
                         <MagicButton title="Visit Video" icon={<FaYoutube />} position="left" />
                     </a>
