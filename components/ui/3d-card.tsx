@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import React, {
+import {
   createContext,
   useState,
   useContext,
@@ -9,6 +9,7 @@ import React, {
   useEffect,
   type HTMLAttributes,
 } from "react";
+import * as React from "react";
 
 // 1. Create the MouseEnter Context
 const MouseEnterContext = createContext<
