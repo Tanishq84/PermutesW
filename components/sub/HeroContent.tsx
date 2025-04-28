@@ -16,18 +16,18 @@ const HeroContent = () => {
     <div className="pb-20 pt-36 z-10 relative my-20">
         <div className="flex justify-center">
             <div className="max-w-[89vw] justify-center">
-                <h2 className="autoBlur uppercase tracking-wider text-xs justify-center items-center text-center text-blue-100">
+                <h2 className="uppercase tracking-wider text-xs justify-center items-center text-center text-blue-100">
                     Research & Development
                 </h2>
 
-                <TextGenerateEffect className="autoBlur text-amber-50 text-center text-[40px] md:text-5xl lg:text-6xl lg:max-w-200"
+                <TextGenerateEffect className="text-amber-50 text-center text-[40px] md:text-5xl lg:text-6xl lg:max-w-200"
                 words="Permutes: Crafting Innovation Beyond Limits"/>
                 <p className="text-center text-blue-100 md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
                 "Where Innovation, Expertise, and Exploration Converge"
 
                 </p>
 
-                <a href="#about" className="autoBlur text-center">
+                <a href="#about" className="text-center">
                     <MagicButton
                     title="Learn About Permutes" 
                     icon={<FaLocationArrow />}
