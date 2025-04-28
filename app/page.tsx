@@ -3,6 +3,7 @@ import Hero from "@/components/main/Hero";
 import MediaContent from "@/components/main/MediaContent";
 import RecentProjects from "@/components/main/RecentProjects";
 import Teams from "@/components/main/Teams";
+import Footer from "@/components/main/Footer";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
 export default function Home() {
@@ -16,8 +17,8 @@ export default function Home() {
       <RecentProjects />
       <MediaContent />
       <Teams />
+      <Footer />
       </div>
-
     </main>
   );
 }

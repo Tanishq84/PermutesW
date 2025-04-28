@@ -1,7 +1,5 @@
 "use client";
-
 import { FaLocationArrow } from "react-icons/fa6";
-
 import { projects } from "@/data";
 import { PinContainer } from "../ui/Pin";
 
@@ -21,7 +19,7 @@ const RecentProjects = () => {
             key={item.id}
           >
             <PinContainer
-              title="/permutes.in"
+              title="Coming Soon"
               href="https://twitter.com/mannupaaji"
             >
               <div className="relative flex items-center justify-center sm:w-96 w-full overflow-hidden h-[20vh] lg:h-[35vh] mb-10">
@@ -70,7 +68,7 @@ const RecentProjects = () => {
 
                 <div className="flex justify-center items-center">
                   <p className="flex lg:text-base md:text-xs text-sm text-purple">
-                    Check Live Site
+                    Visit Project
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>

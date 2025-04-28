@@ -17,7 +17,7 @@ const MediaContent = () => {
         </h2>
 
         {/* MAIN CONTAINER */}
-        <div className="flex flex-col items-center justify-center w-full px-4 mt-[100px] mb-[200px]">
+        <div className="flex flex-col items-center justify-center w-full px-4 mt-[100px]">
           {/* CARD */}
           {medias.map((item) => (
           <CardContainer className="inter-var" key={item.id}>
