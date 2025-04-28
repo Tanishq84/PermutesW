@@ -1,25 +1,9 @@
-.autoBlur{
-  z-index: 900;
-  animation: autoBlurAnimation linear both;
-  animation-timeline: view();
-}
-
-@keyframes autoBluranimation {
-  0%{
-    filter: blur(40px);
-    opacity: 0;
-  }
-  35%, 65%{
-    filter: blur(0);
-    opacity: 1;
-  }
-  100%{
-    filter: blur(40px);
-    opacity: 0;
-  }
-}
-
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 @layer base {
   :root {
@@ -128,5 +112,28 @@
     }
   }
 }
+
+
+.autoBlur{
+
+  animation: autoBlurAnimation linear both;
+  animation-timeline: view();
+}
+
+@keyframes autoBlurAnimation {
+  0%{
+    filter: blur(40px);
+    opacity: 0;
+  }
+  35%, 65%{
+    filter: blur(0);
+    opacity: 1;
+  }
+  100%{
+    filter: blur(40px);
+    opacity: 0;
+  }
+}
+
 
 

@@ -7,23 +7,24 @@ import { PinContainer } from "../ui/Pin";
 
 const RecentProjects = () => {
   return (
-    <section id="recent-projects">
+    <section id="projects">
     <div className="py-40 text-amber-50 pb-20 pt-36 z-10 relative my-20">
-      <h1 className="heading text-7xl justify-center text-center">
-        A small selection of{" "}
-        <span className="text-purple-400">recent projects</span>
+      <h1 className="heading lg:text-7xl md:text-6xl sm:text-5xl text-4xl justify-center text-center">
+        <span className="text-[#79f4de]">A small </span>selection of</h1>
+        <h1 className="heading lg:text-6xl md:text-5xl sm:text-4xl text-3xl justify-center text-center">
+        <span className="text-purple-400">recent </span>projects.
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-50 gap-y-16 mt-10">
         {projects.map((item) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[50%]"
             key={item.id}
           >
             <PinContainer
               title="/permutes.in"
               href="https://twitter.com/mannupaaji"
             >
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[35vh] mb-10">
+              <div className="relative flex items-center justify-center sm:w-96 w-full overflow-hidden h-[20vh] lg:h-[35vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
@@ -33,8 +34,9 @@ const RecentProjects = () => {
                 <img
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0"
+                  className="z-10 absolute bottom-0 rounded-xl rotate-[5deg] w-full h-auto"
                 />
+              
               </div>
 
               <h1 className="font-bold lg:text-xl md:text-xl text-base line-clamp-1">
