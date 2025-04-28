@@ -7,7 +7,6 @@ import React, {
   useContext,
   useRef,
   useEffect,
-  type ElementType,
   type HTMLAttributes,
 } from "react";
 
@@ -31,7 +30,8 @@ export const CardContainer = ({
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!containerRef.current) return;
-    const { left, top, width, height } = containerRef.current.getBoundingClientRect();
+    const { left, top, width, height } =
+      containerRef.current.getBoundingClientRect();
     const x = (e.clientX - left - width / 2) / 25;
     const y = (e.clientY - top - height / 2) / 25;
     containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
@@ -90,10 +90,10 @@ export const CardBody = ({
 };
 
 // 4. CardItem
+// Using only intrinsic HTML elements for the 'as' prop to keep type checking straightforward.
 interface CardItemProps extends HTMLAttributes<HTMLElement> {
-  as?: ElementType;
+  as?: keyof JSX.IntrinsicElements;
   children: React.ReactNode;
-  className?: string;
   translateX?: number;
   translateY?: number;
   translateZ?: number;
@@ -122,11 +122,21 @@ export const CardItem = ({
     ref.current.style.transform = isMouseEntered
       ? `translateX(${translateX}px) translateY(${translateY}px) translateZ(${translateZ}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) rotateZ(${rotateZ}deg)`
       : `translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)`;
-  }, [isMouseEntered, translateX, translateY, translateZ, rotateX, rotateY, rotateZ]);
+  }, [
+    isMouseEntered,
+    translateX,
+    translateY,
+    translateZ,
+    rotateX,
+    rotateY,
+    rotateZ,
+  ]);
 
   return (
     <Tag
-      ref={ref}
+      // TypeScript sometimes complains on ref for intrinsic elements,
+      // so we force a cast here to bypass that error.
+      ref={ref as any}
       className={cn("w-fit transition duration-200 ease-linear", className)}
       {...rest}
     >
