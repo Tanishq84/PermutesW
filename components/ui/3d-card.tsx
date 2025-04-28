@@ -95,7 +95,7 @@ export const CardBody = ({
 // Using only intrinsic HTML elements for the 'as' prop to keep type checking straightforward.
 interface CardItemProps extends HTMLAttributes<HTMLElement> {
   as?: keyof JSX.IntrinsicElements;
-  children: JSX.Element|JSX.Element[];
+  children: JSX.Element|JSX.Element[]|React.ReactNode;
   translateX?: number;
   translateY?: number;
   translateZ?: number;
