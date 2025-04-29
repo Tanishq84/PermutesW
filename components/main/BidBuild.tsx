@@ -106,7 +106,7 @@ const BidBuild = () => {
       bg: 'bg-black',
       content: (
         <ul className="text-lg text-amber-50 space-y-2">
-          <li><strong>Tanishq Som (CEO, Permutes):</strong> +91 84499 22025 | tanishq@permutes.in</li>
+          <li><strong>Tanishq Som (CEO, Permutes):</strong> +91 84499 22025 | tanishqsom19@gmail.com</li>
           <li><strong>Nimish Gupta:</strong> +91 95283 58313 | nimish9119@gmail.com</li>
           <li><strong>Shubham (IEEE):</strong> +91 83170 72770 | shubham0568@ieee.org</li>
         </ul>
