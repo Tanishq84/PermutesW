@@ -129,7 +129,7 @@ const BidBuild = () => {
           variants={fadeInVariant}
         >
           <h1 className="text-5xl font-bold tracking-tight mb-4">Bid & Build 2025</h1>
-          <p className="text-xl font-light">Build. Battle. Brag. — Presented by Permutes x GU IEEE</p>
+          <p className="text-xl font-light">Build. Battle. Brag. — Presented by Permutes x GU IEEE x Mechanical Department (GU)</p>
         </motion.div>
       </section>
 
