@@ -10,6 +10,7 @@ import React from "react";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
 import MagicButton from "../ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
+import Link from 'next/link';
 
 const HeroContent = () => {
   return (
@@ -27,12 +28,12 @@ const HeroContent = () => {
 
                 </p>
 
-                <a href="#about" className="text-center">
+                <Link href="/events/bid_build" className="text-center">
                     <MagicButton
                     title="Learn About Permutes" 
                     icon={<FaLocationArrow />}
                     position="right"/>
-                </a>
+                </Link>
             </div>
         </div>
 
