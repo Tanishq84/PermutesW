@@ -72,14 +72,14 @@ const BidBuild = () => {
       bg: 'bg-black',
       content: (
         <div>
-          <p className="mb-4 text-lg text-amber-50 z-[900]">
+          <p className="mb-4 text-lg text-amber-50 w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
             Participation in the online robotics quiz on <strong>4th May</strong> is <strong>completely free</strong>! Register below to compete for your chance to build and battle.
           </p>
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSdT4EJErDt8M34NDyIGzT8uaqoqGxLfJU4ONJKlPSAuY9_7HA/viewform?embedded=true"
             width="100%"
             height="700"
-            className="border rounded-xl z-10 relative"
+            className="border rounded-xl z-10 relative min-w-[300px]"
             allowFullScreen
           ></iframe>
         </div>

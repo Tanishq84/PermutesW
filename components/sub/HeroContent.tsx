@@ -28,12 +28,12 @@ const HeroContent = () => {
 
                 </p>
 
-                <Link href="/events/bid_build" className="text-center">
+                <a href="/events/bid_build" className="text-center">
                     <MagicButton
                     title="Robotics Event: Bid & Build" 
                     icon={<FaLocationArrow />}
                     position="right"/>
-                </Link>
+                </a>
                 <Link href="#about" className="text-center">
                     <MagicButton
                     title="Learn About Permutes" 
