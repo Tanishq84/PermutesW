@@ -2,6 +2,9 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import MagicButton from '@/components/ui/MagicButton'
+import { FaLocationArrow } from "react-icons/fa6";
+
 
 const fadeInVariant = {
   hidden: { opacity: 0, y: 40 },
@@ -130,6 +133,12 @@ const BidBuild = () => {
         >
           <h1 className="text-5xl font-bold tracking-tight mb-4">Bid & Build 2025</h1>
           <p className="text-xl font-light">Build. Battle. Brag. — Presented by Permutes x GU IEEE x Mechanical Department (GU)</p>
+          <a href="https://forms.gle/cydDbKJrq1Wwc4ZZA" className='text-center'>
+            <MagicButton
+              title="Register Now! " 
+              icon={<FaLocationArrow />}
+              position="right"/>
+          </a>
         </motion.div>
       </section>
 
