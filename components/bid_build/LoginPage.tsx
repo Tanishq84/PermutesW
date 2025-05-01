@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import axios from "axios"; // Import Axios for making HTTP requests
-import { useForm } from "react-hook-form"; // React Hook Form
-import { yupResolver } from "@hookform/resolvers/yup"; // Yup Resolver for React Hook Form
-import * as Yup from "yup"; // Import Yup for validation
+import axios from "axios"; 
+import { useForm } from "react-hook-form"; 
+import { yupResolver } from "@hookform/resolvers/yup"; 
+import * as Yup from "yup"; 
 import "../../styles/loginPage.css"
 
 // Yup validation schema
@@ -13,30 +13,26 @@ const validationSchema = Yup.object({
 });
 
 const LoginPage: React.FC = () => {
-  const [error, setError] = useState(""); // For showing error messages
-  const [loading, setLoading] = useState(false); // For handling loading state
+  const [error, setError] = useState(""); 
+  const [loading, setLoading] = useState(false); 
 
-  // Use React Hook Form with Yup resolver
   const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: yupResolver(validationSchema),
   });
 
   // Handle form submission
   const onSubmit = async (data: { username: string; password: string }) => {
-    setLoading(true); // Set loading to true when the form is being submitted
-    setError(""); // Reset error message
+    setLoading(true); 
+    setError(""); 
 
     try {
-      // Make the POST request to your backend API
-      const response = await axios.post("/api/login", data); // Replace with your API endpoint
+      const response = await axios.post("/api/login", data); 
 
-      // Handle success (redirect or show success message)
       console.log("Login successful", response.data);
     } catch (err: any) {
-      // Handle error (e.g., incorrect login credentials)
       setError(err.response?.data?.message || "An error occurred. Please try again.");
     } finally {
-      setLoading(false); // Set loading to false once the request is complete
+      setLoading(false); 
     }
   };
 
