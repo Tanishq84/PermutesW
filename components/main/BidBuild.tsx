@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import MagicButton from '@/components/ui/MagicButton'
 import { FaLocationArrow } from "react-icons/fa6";
-
+import Link from 'next/link';
 
 const fadeInVariant = {
   hidden: { opacity: 0, y: 40 },
@@ -139,6 +139,12 @@ const BidBuild = () => {
               icon={<FaLocationArrow />}
               position="right"/>
           </a>
+          <Link href="/login" passHref>
+            <MagicButton
+              title="Participant Login " 
+              icon={<FaLocationArrow />}
+              position="right"/>
+          </Link>
         </motion.div>
       </section>
 
