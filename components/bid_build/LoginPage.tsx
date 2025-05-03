@@ -1,4 +1,5 @@
 import { SignIn } from '@clerk/nextjs';
+import'../../styles/LoginPage.css';
 
 const LoginPage = () => {
   return (
