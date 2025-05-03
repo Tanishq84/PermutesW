@@ -2,8 +2,8 @@ import { SignIn } from '@clerk/nextjs';
 
 const LoginPage = () => {
   return (
-    <div style={{ maxWidth: '400px', margin: '0 auto', padding: '20px' }}>
-      <h1 style={{ textAlign: 'center' }}>Login</h1>
+    <div className="login-container">
+      <h1 className="login-title">Login</h1>
       <SignIn
         routing="path"
         path="/login"
