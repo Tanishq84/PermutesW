@@ -1,5 +1,7 @@
+'use client'; // ✅ Ensure this is a client component
+
 import { SignIn } from '@clerk/nextjs';
-import'../../styles/LoginPage.css';
+import '../../styles/LoginPage.css';
 
 const LoginPage = () => {
   return (
@@ -9,7 +11,6 @@ const LoginPage = () => {
         routing="path"
         path="/login"
         signUpUrl="/signup"
-        forceRedirectUrl={process.env.NEXT_PUBLIC_CLERK_SIGN_IN_FORCE_REDIRECT_URL || '/dashboard'}
       />
     </div>
   );
