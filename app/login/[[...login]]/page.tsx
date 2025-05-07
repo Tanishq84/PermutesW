@@ -1,5 +1,6 @@
 // pages/login.tsx
-import LoginPage from '../../../components/bid_build/LoginPage'; // Adjust path based on your folder structure
+import '../../../styles/login.css'
+import LoginPage from '../../../components/bid_build/LoginPage'; 
 
 const LoginPageWrapper = () => {
   return <LoginPage />;

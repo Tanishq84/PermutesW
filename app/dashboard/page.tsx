@@ -1,4 +1,5 @@
 // pages/dashboard.tsx
+import "../../styles/dashboard.css";
 import { NextPage } from 'next';
 import Dashboard from '../../components/bid_build/dashboard';
 
