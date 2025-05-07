@@ -1,7 +1,7 @@
-'use client'; // ✅ Ensure this is a client component
+'use client';
 
 import { SignIn } from '@clerk/nextjs';
-import '../../styles/LoginPage.css';
+
 
 const LoginPage = () => {
   return (

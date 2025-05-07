@@ -1,7 +1,7 @@
 "use client";
 import { useUser, RedirectToSignIn, useClerk } from "@clerk/nextjs";
 import { useState, useEffect } from "react";
-import "../../styles/dashboard.css";
+
 
 // Interfaces
 interface Notification {
