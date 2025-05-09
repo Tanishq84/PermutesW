@@ -9,6 +9,20 @@
   position: relative;
 }
 
+/* Top Header (User button area) */
+.dashboard-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.user-button-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 /* Hamburger for mobile */
 .hamburger {
   position: fixed;
@@ -24,7 +38,7 @@
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
 }
 
-/* Overlay when sidebar is open */
+/* Overlay */
 .sidebar-overlay {
   position: fixed;
   top: 0;
@@ -39,7 +53,7 @@
   display: block;
 }
 
-/* Sidebar base */
+/* Sidebar */
 .sidebar {
   width: 240px;
   background: #121212;
@@ -94,7 +108,7 @@
   padding-left: 16px;
 }
 
-/* Footer */
+/* Sidebar Footer */
 .sidebar-footer {
   margin-top: auto;
 }
@@ -119,7 +133,7 @@
   background-color: #e03d3d;
 }
 
-/* Loader spin animation */
+/* Loader */
 .spin-icon {
   animation: spin 0.9s linear infinite;
 }
@@ -129,14 +143,14 @@
   100% { transform: rotate(360deg); }
 }
 
-/* Main Content */
+/* Main content */
 .dashboard-content {
   flex-grow: 1;
-  padding: 40px 40px 40px 60px; 
+  padding: 40px 40px 40px 60px;
   overflow-y: auto;
 }
 
-/* Responsive behavior */
+/* Responsive */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -156,7 +170,7 @@
   }
 
   .dashboard-content {
-    padding: 40px 20px 20px 70px; 
+    padding: 40px 20px 20px 70px;
   }
 
   body.sidebar-open {
@@ -175,7 +189,7 @@
   margin-top: 0.5rem;
 }
 
-/* Stats Section */
+/* Stats */
 .stats-section {
   display: flex;
   gap: 20px;
