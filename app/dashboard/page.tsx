@@ -1,15 +1,19 @@
 'use client';
 
 import DashboardLayout from '../../components/bid_build/dashboardlayout';
-import { useUser } from '@clerk/nextjs';
+import { useUser, RedirectToSignIn } from '@clerk/nextjs';
 
 export default function DashboardPage() {
-  const { user } = useUser();
+  const { user, isLoaded } = useUser();
+
+  if (!isLoaded) return <div>Loading...</div>;
+
+  if (!user) return <RedirectToSignIn />;
 
   return (
     <DashboardLayout>
       <section className="welcome-section">
-        <h1>Welcome back, {user?.firstName || 'User'} 👋</h1>
+        <h1>Welcome back, {user.firstName || 'User'} 👋</h1>
         <p>Here’s what’s happening in your dashboard today.</p>
       </section>
 
