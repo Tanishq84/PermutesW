@@ -4,6 +4,43 @@ import MagicButton from "../ui/MagicButton";
 import { FaYoutube } from "react-icons/fa6";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import { medias } from "@/data";
+import { FocusCards } from "../ui/focus-cards";
+
+
+
+const cards = [
+    {
+      title: "Sumit's 2024 Experience",
+      src: "https://www.instagram.com/reel/DJeRDhHPFWJ/",
+      type: "reel",
+    },
+    {
+      title: "Mahima's uncut Life",
+      src: "https://youtube.com/shorts/_CG1CQwmVuA?si=NGe5C8MDKlQBqi83",
+      type: "short",
+    },
+    {
+      title: "PerOculus First flight",
+      src: "https://www.instagram.com/reel/DJA-3mPSDzj/",
+      type: "reel",
+    },
+    {
+      title: "What is Permutes ?",
+      src: "https://youtube.com/shorts/Rq9esLows90?si=0o73R9wTWHYcAJV4",
+      type: "short",
+    },
+    {
+      title: "Projects 2024-2025",
+      src: "https://www.instagram.com/p/DJANbUlhrnW/",
+      type: "reel",
+    },
+    {
+      title: "Team Permutes",
+      src: "https://youtube.com/shorts/qcVyLky7mQ0?si=oq4d3DJ-SdMY7zRK",
+      type: "short",
+    },
+  ];
+
 
 const MediaContent = () => {
   return (
@@ -77,6 +114,8 @@ const MediaContent = () => {
             </CardBody>
           </CardContainer>
           ))}
+
+          <FocusCards cards={cards} />
         </div>
 
       </div>

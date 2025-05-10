@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+/app/join
+/components/ui/input.tsx
+/components/ui/label.tsx
+/components/ui/vortex.tsx
+/components/hooks
