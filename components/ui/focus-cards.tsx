@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 type CardType = {
   title: string;
   src: string;
-  type: "reel" | "short" | "custom";
+  type: string;
 };
 
 // Helper to extract YouTube Short ID
