@@ -3,14 +3,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 
-// Card Type with media type
 type CardType = {
   title: string;
   src: string;
   type: string;
 };
 
-// Helper to extract YouTube Short ID
 function extractYTId(url: string): string {
   const regex = /(?:\/shorts\/|v=|\/embed\/|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
   const match = url.match(regex);
@@ -54,7 +52,7 @@ export const Card = React.memo(
         onMouseEnter={() => setHovered(index)}
         onMouseLeave={() => setHovered(null)}
         className={cn(
-          "rounded-lg relative overflow-hidden bg-white dark:bg-neutral-900 lg:aspect-[9/17] sm:aspect-[10/16] md:aspect-[10/16] w-full transition-all duration-300 ease-out",
+          "rounded-lg relative overflow-hidden bg-white dark:bg-neutral-900 lg:aspect-[9/17] sm:aspect-[10/16] aspect-[10/17] md:aspect-[10/16] w-full transition-all duration-300 ease-out",
           hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
         )}
       >

@@ -231,14 +231,17 @@ export const navItems = [
   export const socialMedia = [
     {
       id: 1,
-      img: "/git.svg",
+      img: "/insta.svg",
+      link: "https://www.instagram.com/permutes_/",
     },
     {
       id: 2,
-      img: "/twit.svg",
+      img: "/globe.svg",
+      link: "https://www.youtube.com/@Permutes13",
     },
     {
       id: 3,
       img: "/link.svg",
+      link: "https://in.linkedin.com/company/permutes",
     },
   ];

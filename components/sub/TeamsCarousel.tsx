@@ -51,7 +51,7 @@ const teamsData = [
 
 export default function TeamsCarousel() {
   return (
-    <div className="relative w-full overflow-hidden py-20 bg-black text-white">
+    <div className="relative w-full overflow-hidden py-20 text-white">
       <div className="flex flex-row items-center justify-center mb-10 w-full">
       <AnimatedTooltip items={teamsData} />
     </div>
