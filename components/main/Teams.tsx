@@ -5,7 +5,7 @@ import TeamsCarousel from '../sub/TeamsCarousel';
 const Teams = () => {
   return (
     <section id="teams" className="flex flex-col items-center relative text-white">
-      <div className="py-40 pb-20 pt-36 z-10 relative my-20 w-full flex flex-col items-center">
+      <div className="py-4 pb-2 pt-36 z-10 relative my-2 w-full flex flex-col items-center">
         <h1 className="heading lg:text-7xl md:text-6xl sm:text-5xl text-4xl text-center mb-5">
           <span className="text-[#79f4de]">Our </span><span className="text-purple-400">Team</span>
         </h1>
