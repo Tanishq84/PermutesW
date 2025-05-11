@@ -2,9 +2,9 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import MagicButton from '@/components/ui/MagicButton'
+import MagicButton from '@/components/ui/MagicButton';
 import { FaLocationArrow } from "react-icons/fa6";
-
+import Link from 'next/link';
 
 const fadeInVariant = {
   hidden: { opacity: 0, y: 40 },
@@ -23,7 +23,9 @@ const BidBuild = () => {
       content: (
         <div className="space-y-6 text-lg text-amber-50">
           <p><strong>Pre-Qualifier (Online – 4 May & 11 May, 2025):</strong> Robotics Quiz & Theme Voting</p>
-          <p><strong>Day 1:</strong>
+
+          <div>
+            <p><strong>Day 1:</strong></p>
             <ul className="list-disc ml-6">
               <li>Inauguration & Chit Draw</li>
               <li>PPT & Circuit Design</li>
@@ -32,8 +34,10 @@ const BidBuild = () => {
               <li>Auction – Part 1 & 2 (Essentials + Bonuses)</li>
               <li>Strategy Lock-In</li>
             </ul>
-          </p>
-          <p><strong>Day 2:</strong>
+          </div>
+
+          <div>
+            <p><strong>Day 2:</strong></p>
             <ul className="list-disc ml-6">
               <li>Overnight Bot Building</li>
               <li>3 Rounds of Technical Inspection</li>
@@ -41,7 +45,7 @@ const BidBuild = () => {
               <li>Live Bot Showdown</li>
               <li>Awards & Closing Ceremony</li>
             </ul>
-          </p>
+          </div>
         </div>
       )
     },
@@ -119,30 +123,28 @@ const BidBuild = () => {
 
   return (
     <main className="text-gray-900 font-sans bg-black z-10 relative">
-      {/* Hero Section */}
       <section
         className="relative h-[80vh] bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: "url('/bidbuild_banner.png')" }}
       >
-        <motion.div 
+        <motion.div
           className="bg-black bg-opacity-60 p-8 rounded-2xl text-white text-center max-w-2xl"
-          initial="hidden" 
-          whileInView="visible" 
-          viewport={{ once: true }} 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
           variants={fadeInVariant}
         >
           <h1 className="text-5xl font-bold tracking-tight mb-4">Bid & Build 2025</h1>
           <p className="text-xl font-light">Build. Battle. Brag. — Presented by Permutes x GU IEEE x Mechanical Department (GU)</p>
-          <a href="https://forms.gle/cydDbKJrq1Wwc4ZZA" className='text-center'>
-            <MagicButton
-              title="Register Now! " 
-              icon={<FaLocationArrow />}
-              position="right"/>
+          <a href="https://forms.gle/cydDbKJrq1Wwc4ZZA" className="text-center">
+            <MagicButton title="Register Now!" icon={<FaLocationArrow />} position="right" />
           </a>
+          <Link href="/login" passHref>
+            <MagicButton title="Participant Login" icon={<FaLocationArrow />} position="right" />
+          </Link>
         </motion.div>
       </section>
 
-      {/* About Section */}
       <motion.section
         className="bg-black py-16 px-6 md:px-20 flex justify-center z-10"
         initial="hidden"
@@ -165,7 +167,6 @@ const BidBuild = () => {
         </div>
       </motion.section>
 
-      {/* Why Participate */}
       <motion.section
         className="bg-gray-900 py-16 px-6 md:px-20 flex justify-center z-10"
         initial="hidden"
@@ -185,7 +186,6 @@ const BidBuild = () => {
         </div>
       </motion.section>
 
-      {/* Remaining Sections */}
       {sections.map((section, idx) => (
         <motion.section
           key={idx}
